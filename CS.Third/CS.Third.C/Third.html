@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+        content="width=device-height, initial-scale=1" />
+
+    <title>Engineer's Adda</title>
+    <link rel="stylesheet" type="text/css" href="Third.css">
+</head>
+
+<body id="bd">
+    <div>
+        <div>
+            <h1>CS Third Year SGPA Calculator</h1>
+        </div>
+        <div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Select Your Semister :</h3>
+                        </td>
+                        <td>
+                            <select id="semister" onchange="selectSem()">
+                                <option value="Fifth" selected>Fifth sem</option>
+                                <option value="Sixth">Sixth sem</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="fifth">
+                <table>
+                    <tr>
+                        <td>Information Theory & Coding</td>
+                        <td>
+                            <select id="ITC">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Compiler Design</td>
+                        <td>
+                            <select id="CD">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>
+                            <select id="OS">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Computer Graphics & Multimedia</td>
+                        <td>
+                            <select id="CGM">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Analysis of Algorithms</td>
+                        <td><select id="AOA">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select></td>
+
+                    </tr>
+                    <tr>
+                        <td>Wireless Communication / Human-Computer Interaction / Bioinformatics</td>
+                        <td>
+                            <select id="WCHCIB">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Computer Graphics & Multimedia Lab </td>
+                        <td>
+                            <select id="CGML">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Compiler Design Lab </td>
+                        <td>
+                            <select id="CDL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Analysis of Algorithms Lab </td>
+                        <td>
+                            <select id="AOAL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Advance Java Lab </td>
+                        <td>
+                            <select id="AJL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Industrial Training </td>
+                        <td>
+                            <select id="IT">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Social Outreach,Discipline & Extra Curricular Act</td>
+                        <td>
+                            <select id="SODECA5">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div id="sixth">
+                <table>
+                    <tr>
+                        <td>Digital Image Processing</td>
+                        <td>
+                            <select id="DIP">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>
+                            <select id="ML">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Information Security System</td>
+                        <td>
+                            <select id="ISS">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Computer Architecture and Organization</td>
+                        <td>
+                            <select id="CAO">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td><select id="AI">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select></td>
+
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing</td>
+                        <td>
+                            <select id="CC">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Distributed System / Software Defined Network / Ecommerce and ERP</td>
+                        <td>
+                            <select id="DSSDNEE">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Digital Image Processing Lab</td>
+                        <td>
+                            <select id="DIPL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Machine Learning Lab </td>
+                        <td>
+                            <select id="MLL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Python Lab </td>
+                        <td>
+                            <select id="PL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Mobile Application Development Lab </td>
+                        <td>
+                            <select id="MADL">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Social Outreach,Discipline & Extra Curricular Act</td>
+                        <td>
+                            <select id="SODECA6">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <input type="button" value="Calculate" id="calc" onclick="calculate()">
+            </div>
+            <div>
+                <h3>
+                    <label>Your SGPA is </label>
+                    <input type="text" id="result" disabled>
+                </h3>
+
+            </div>
+            <div>
+                <footer>Made by <span>Harsh Meena</span></footer>
+            </div>
+        </div>
+        <script src="Third.js" defer></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+        content="width=device-height, initial-scale=1" />
+
+    <title>Engineer's Adda</title>
+    <link rel="stylesheet" type="text/css" href="First.css">
+</head>
+
+<body id="bd">
+    <div>
+        <div>
+            <h1>CS First Year SGPA Calculator</h1>
+        </div>
+        <div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Select Your Semister :</h3>
+                        </td>
+                        <td>
+                            <select id="semister" onchange="selectSem()">
+                                <option value="First" selected>First sem</option>
+                                <option value="Second">Second sem</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="first">
+                <table>
+                    <tr>
+                        <td>Engineering Mathematics-I </td>
+                        <td>
+                            <select id="EM1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Engineering Physics / Engineering Chemistry</td>
+                        <td>
+                            <select id="EPEC1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Communication Skills / Human Values</td>
+                        <td>
+                            <select id="CSHV1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming for Problem Solving / Basic Mechanical Engineering</td>
+                        <td>
+                            <select id="PPSBME1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Basic Electrical Engineering / Basic Civil Engineering</td>
+                        <td><select id="BEEBCE1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Physics Lab / Engineering Chemistry Lab</td>
+                        <td>
+                            <select id="EPLECL1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Language Lab / Human Values Activities and Sports</td>
+                        <td>
+                            <select id="LLHVAS1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Computer Programming Lab / Manufacturing Practice Workshop </td>
+                        <td>
+                            <select id="CPLMPW1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Basic Electrical Engineering Lab / Basic Civil Engineering Lab </td>
+                        <td>
+                            <select id="BEELBCEL1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Computer Aided Engineering Graphics / Computer Aided Machine Drawing</td>
+                        <td>
+                            <select id="CAEGCAMD1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Social Outreach, Discipline & Extra Curricular Act</td>
+                        <td>
+                            <select id="SODECA1">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div id="second">
+                <table>
+                    <tr>
+                        <td>Engineering Mathematics-II</td>
+                        <td>
+                            <select id="EM2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Engineering Physics / Engineering Chemistry</td>
+                        <td>
+                            <select id="EPEC2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Communication Skills / Human Values</td>
+                        <td>
+                            <select id="CSHV2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming for Problem Solving / Basic Mechanical Engineering</td>
+                        <td>
+                            <select id="PPSBME2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Basic Electrical Engineering / Basic Civil Engineering</td>
+                        <td><select id="BEEBCE2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Physics Lab / Engineering Chemistry Lab</td>
+                        <td>
+                            <select id="EPLECL2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>Language Lab / Human Values Activities and Sports</td>
+                        <td>
+                            <select id="LLHVAS2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Computer Programming Lab / Manufacturing Practice Workshop </td>
+                        <td>
+                            <select id="CPLMPW2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Basic Electrical Engineering Lab / Basic Civil Engineering Lab </td>
+                        <td>
+                            <select id="BEELBCEL2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Computer Aided Engineering Graphics / Computer Aided Machine Drawing</td>
+                        <td>
+                            <select id="CAEGCAMD2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Social Outreach, Discipline & Extra Curricular Act</td>
+                        <td>
+                            <select id="SODECA2">
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <input type="button" value="Calculate" id="calc" onclick="calculate()">
+            </div>
+            <div>
+                <h3>
+                    <label>Your SGPA is </label>
+                    <input type="text" id="result" disabled>
+                </h3>
+
+            </div>
+            <div>
+                <footer>Made by <span>Harsh Meena</span></footer>
+            </div>
+        </div>
+        <script src="First.js" defer></script>
+</body>
+</html>
