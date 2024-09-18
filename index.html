@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+        content="width=device-height, initial-scale=1" />
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <title>Engineer's Adda</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script src="script.js"></script>
+</head>
+
+<body id="bd">
+    <div class="home">
+        <div id="webBody">
+            <div>
+                <h1>Welcome to Engineer's Adda</h1>
+            </div>
+            <div>
+                <p>Please Select the details below: </p>
+            </div>
+            <div>
+                <form class="details" name="details">
+                    <table>
+                        <tr>
+                            <td class="list">Department :</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="Department" id="dept" onchange="selectDept()">
+                                    <option value="CS" selected>Computer Science</option>
+                                    <option value="IT">Informating Technology</option>
+                                    <option value="CE">Civil Engineering</option>
+                                    <option value="EC">Electronics & Communication</option>
+                                    <option value="EE">Electrical Engineering</option>
+                                    <option value="ME">Mechanical Engineering</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list">Year :</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="Year" id="year">
+                                    <option value="First" selected>First Year </option>
+                                    <option value="Second">Second Year</option>
+                                    <option value="Third">Third Year</option>
+                                    <option value="Fourth">Fourth Year</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <input type="submit" value="Submit" onclick="submitHandler()">
+                </form>
+            </div>
+        </div>
+        <div id="loadingIcon" style="display: none;">
+            <img src="Loading.gif" alt="Loading..." width="50px" />
+        </div>
+        <a id="csFirstYearLink" href="CS.First/First.html" target="_blank" style="display: none;">Go to CS First Year Page</a>
+        <a id="csSecondYearLink" href="CS.Second/Second.html" target="_blank" style="display: none;">Go to CS Second Year Page</a>
+        <a id="csThirdYearLink" href="CS.Third/Third.html" target="_blank" style="display: none;">Go to CS Third Year Page</a>
+        <a id="csFourthYearLink" href="CS.Fourth/Fourth.html" target="_blank" style="display: none;">Go to CS Fourth Year Page</a>
+        <a id="itFirstYearLink" href="IT.First/First.html" target="_blank" style="display: none;">Go to IT First Year Page</a>
+        <a id="itSecondYearLink" href="IT.Second/Second.html" target="_blank" style="display: none;">Go to IT Second Year Page</a>
+        <a id="itThirdYearLink" href="IT.Third/Third.html" target="_blank" style="display: none;">Go to IT Third Year Page</a>
+        <a id="itFourthYearLink" href="IT.Fourth/Fourth.html" target="_blank" style="display: none;">Go to IT Fourth Year Page</a>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
